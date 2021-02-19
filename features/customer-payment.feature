@@ -34,9 +34,10 @@ Scenario: Falha ao efetuar pagamento, dados inválidos
     And e insiro o numero “1234 1234 1234 1234” errado  
     Then uma mensagem de erro é mostrada
 
-Scenario: Usuário informa que o serviço foi realizado
+Scenario: Cliente informe que o serviço foi realizado
     Given que estou na pagina de “Serviços” 
     And estou logado como “Cliente”
+    And que escolhi previamente a opção “Pagar depois do serviço” 
     When eu seleciono a opção “Serviço Realizado”  
     Then minhas informações de pagamento são solicitadas
     
