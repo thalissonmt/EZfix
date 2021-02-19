@@ -25,3 +25,10 @@ Scenario: Falha ao efetuar pagamento, CPF inválido
     When eu adiciono as informações do “Cartão de Crédito” para pagamento
     And e insiro o CPF “123.123.123-12” errado  
     Then uma mensagem de erro é mostrada
+
+Scenario: Falha ao efetuar pagamento, dados inválidos
+    Given que estou na pagina de “Pagamento” 
+    And estou logado como “Cliente”
+    When eu adiciono as informações do “Cartão de Crédito” para pagamento
+    And e insiro o numero “1234 1234 1234 1234” errado  
+    Then uma mensagem de erro é mostrada
