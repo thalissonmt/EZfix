@@ -25,3 +25,4 @@ Scenario: Falha ao efetuar pagamento, CPF inválido
     When eu adiciono as informações do “Cartão de Crédito” para pagamento
     And e insiro o CPF “123.123.123-12” errado  
     Then uma mensagem de erro é mostrada
+    And o pagamento não é efetuado
