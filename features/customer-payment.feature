@@ -38,4 +38,5 @@ Scenario: Usuário informa que o serviço foi realizado
     And estou logado como “Cliente”
     When eu seleciono a opção “Serviço Realizado”  
     Then minhas informações de pagamento são solicitadas
+    
 
