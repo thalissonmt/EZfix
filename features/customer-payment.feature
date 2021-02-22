@@ -39,6 +39,6 @@ Scenario: Cliente informe que o serviço foi realizado
     And estou logado como “Cliente”
     And que escolhi previamente a opção “Pagar depois do serviço” 
     When eu seleciono a opção “Serviço Realizado”  
-    Then minhas informações de pagamento são solicitadas
+    Then minhas informações de pagamento são solicitadas 
     
 
